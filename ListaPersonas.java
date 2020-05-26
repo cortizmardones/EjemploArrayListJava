@@ -39,9 +39,14 @@ public class ListaPersonas {
     }
 
     public void listarPersonas() {
-        for (Persona lista : listaPersonas) {
+        if(listaPersonas.isEmpty()){
+            System.out.println("El listado esta vacio no hay ninguna persona");
+        }else{
+            for (Persona lista : listaPersonas) {
             System.out.println(lista.toString());
+            }
         }
+
     }
 
     public void actualizarPersona(int posicion, Persona persona) {
