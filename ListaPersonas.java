@@ -50,7 +50,17 @@ public class ListaPersonas {
     }
 
     public void actualizarPersona(int posicion, Persona persona) {
-        listaPersonas.set(posicion, persona);
+        if(listaPersonas.isEmpty()){
+            System.out.println("La lista esta vacía , debe utilizar el método agregarPersona() primero");
+        }else{
+            if( posicion >= 0 && posicion <= listaPersonas.size() ){
+                listaPersonas.set(posicion, persona);
+            }else{
+                System.out.println("La posición no existe en el arreglo");
+            }
+        }
     }
 
 }
+
+

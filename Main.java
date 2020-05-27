@@ -11,8 +11,8 @@ public class Main {
         Persona persona3 = new Persona(3,"Claudio","Sandoval",33);
         Persona persona4 = new Persona(4,"Prueba","Prueba",20);
         
-        
         //Validando los metodos.
+        lista.actualizarPersona(5, persona4);
         lista.listarPersonas();
         lista.eliminarPersona(persona1);
         System.out.println("");
@@ -27,8 +27,13 @@ public class Main {
         
         //Validando el ultimo metodo
         lista.eliminarPersona(persona4);
+         lista.actualizarPersona(0, persona4);
         System.out.println("");
         
+        lista.listarPersonas();
+        System.out.println("");
+        
+        lista.actualizarPersona(2,persona4);
         lista.listarPersonas();
         System.out.println("");
         
